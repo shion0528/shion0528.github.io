@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shion Yorigami's personal blog and previous work.">
+  <title>Shion Yorigami — Blog</title>
+  <link rel="stylesheet" href="vendor/bulma-1.0.4.min.css">
+  <link rel="stylesheet" href="framework.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="container is-max-tablet page">
+    <header class="level site-header">
+      <div class="level-left">
+        <a class="site-name" href="#about">Shion's blog</a>
+      </div>
+      <nav class="level-right navigation" aria-label="Main navigation">
+        <a href="#posts">Posts</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="profile" id="about" aria-labelledby="profile-name">
+        <div class="columns is-vcentered">
+          <div class="column is-narrow">
+            <figure class="image avatar">
+              <img src="assets/avatar.png" width="112" height="112"
+                   alt="Shion Yorigami's illustrated avatar">
+            </figure>
+          </div>
+          <div class="column">
+            <h1 class="title is-3 mb-3" id="profile-name">Shion Yorigami</h1>
+            <p class="bio">I'm very lazy.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-section" id="posts" aria-labelledby="posts-heading">
+        <h2 class="title is-5" id="posts-heading">Posts</h2>
+        <div class="content">
+          <ul class="post-list">
+            <li>
+              <article id="coursework">
+                <h3 class="title is-6 mb-2"><a href="#coursework">A course exercise</a></h3>
+                <p>This blog is part of my coursework.</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="blog-section" id="projects" aria-labelledby="projects-heading">
+        <h2 class="title is-5" id="projects-heading">Projects</h2>
+        <table class="table is-fullwidth project-table">
+          <caption class="is-sr-only">Previous work</caption>
+          <thead>
+            <tr><th scope="col">Title</th><th scope="col">Platform</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Welcome to the Baroness</th><td>Windows</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="level site-footer">
+      <div class="level-left"><span>Shion Yorigami</span></div>
+      <div class="level-right"><a href="#about">Back to top</a></div>
+    </footer>
+  </div>
+</body>
+</html>

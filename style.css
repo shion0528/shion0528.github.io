@@ -1,0 +1,124 @@
+/* All page styling lives in this file. */
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #23313e;
+  background-color: #fafbfc;
+  line-height: 1.65;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #236472; text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid #236472; outline-offset: 5px; }
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.site-header,
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.site-header {
+  min-height: 88px;
+  border-bottom: 1px solid #dce2e7;
+}
+
+.site-name { color: #23313e; font-weight: 700; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 24px; }
+nav a { color: #475865; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 36px;
+  padding: 28px;
+  background-color: #edf3f6;
+  border-radius: 6px;
+  scroll-margin-top: 24px;
+}
+
+.avatar {
+  display: block;
+  width: 112px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+h1 {
+  margin: 0;
+  color: #173d50;
+  background-color: #edf3f6;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+}
+
+.bio { margin: 12px 0 0; color: #475865; }
+.section { margin-top: 40px; scroll-margin-top: 24px; }
+h2 { margin: 0 0 18px; font-size: 21px; line-height: 1.4; }
+h3 { margin: 0; font-size: 19px; line-height: 1.5; }
+h3 a { color: #23313e; }
+
+.post-list { margin: 0; padding-left: 24px; list-style-type: square; }
+.post-list li { padding-left: 5px; }
+.post-list li::marker { color: #236472; }
+.post-list p { margin: 8px 0 0; color: #475865; }
+article { scroll-margin-top: 24px; }
+
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 14px 16px; border-bottom: 1px solid #dce2e7; }
+thead { background-color: #f0f3f5; }
+thead th { font-size: 14px; color: #475865; }
+tbody th { font-weight: 400; }
+
+.site-footer {
+  margin-top: 56px;
+  padding: 24px 0 32px;
+  border-top: 1px solid #dce2e7;
+  font-size: 13px;
+  color: #596874;
+}
+
+.visually-hidden,
+.skip-link:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link:focus {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  padding: 8px 12px;
+  background-color: white;
+}
+
+@media (max-width: 540px) {
+  .page { padding: 0 20px; }
+  .site-header { align-items: flex-start; flex-direction: column; gap: 10px; padding: 20px 0; }
+  nav { gap: 24px; }
+  .profile { margin-top: 24px; padding: 22px; gap: 20px; align-items: flex-start; flex-direction: column; }
+  .avatar { width: 88px; height: 88px; }
+  h1 { font-size: 29px; }
+  .section { margin-top: 32px; }
+  th, td { padding: 12px 10px; }
+  .site-footer { margin-top: 40px; }
+}
